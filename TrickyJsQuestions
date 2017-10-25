@@ -1,0 +1,76 @@
+
+
+1. What will the following code output?
+for (var i = 0; i < 3; i++) {
+  setTimeout(function() { alert(i); }, 1000 + i);
+}
+
+2. Write a function that would allow you to do this.
+var addSix = createBase(6);
+addSix(10); // returns 16
+addSix(21); // returns 27
+
+3.What will be the output?
+z = [4,4]
+z.push(z)
+console.log(z)
+
+Ans: 3rd entry is a Multidimension array 
+[4, 4, Array[3]] 
+
+4.What is the out put
+var myObject = {
+
+egg: "plant",
+      func: function() {
+            var self = this;   
+           console.log("outer func: this.egg = " + this.egg);  
+          console.log("outer func: self.egg = " + self.egg);
+          (function() {
+            console.log("inner func: this.egg = " + this.egg);
+            console.log("inner func: self.egg = " + self.egg);
+            }());
+       }};
+myObject.func();
+
+Ans:outer func:  this.egg = plant
+2outer func:  self.egg = plant
+3inner func:  this.egg = undefined
+4inner func:  self.egg = plant
+In the inner function, “self” remains within scope while “this” can no longer refer to “myObject"
+
+6.  (function(){
+    return typeof arguments;
+  })();
+  
+  Object
+7.   var f = function g(){ return 23; };
+  typeof g();
+  
+  Error
+  
+8.   (function(x){
+    delete x;
+    return x;
+  })(1);
+  
+  1
+  
+9. var y = 1, x = y = typeof x;
+  x;
+  "undeined"
+  
+10.   (function f(f){
+    return typeof f();
+  })(function(){ return 1; });
+  
+  "number"
+11. var foo = {
+    bar: function() { return this.baz; },
+    baz: 1
+  };
+  (function(){
+    return typeof arguments[0]();
+  })(foo.bar);
+  
+    "undefined"
