@@ -1,6 +1,4 @@
-
-
-1. What will the following code output?
+ 1. What will the following code output?
 for (var i = 0; i < 3; i++) {
   setTimeout(function() { alert(i); }, 1000 + i);
 }
@@ -13,8 +11,9 @@ addSix(21); // returns 27
 3.What will be the output?
 z = [4,4]
 z.push(z)
-console.log(z)
 
+console.log(z)
+ 
 Ans: 3rd entry is a Multidimension array 
 [4, 4, Array[3]] 
 
@@ -22,8 +21,9 @@ Ans: 3rd entry is a Multidimension array
 var myObject = {
 
 egg: "plant",
-      func: function() {
-            var self = this;   
+
+func: function() {
+              var self = this;   
            console.log("outer func: this.egg = " + this.egg);  
           console.log("outer func: self.egg = " + self.egg);
           (function() {
@@ -31,11 +31,12 @@ egg: "plant",
             console.log("inner func: self.egg = " + self.egg);
             }());
        }};
-myObject.func();
+"1function"myObject.func();
 
 Ans:outer func:  this.egg = plant
 2outer func:  self.egg = plant
 3inner func:  this.egg = undefined
+
 4inner func:  self.egg = plant
 In the inner function, “self” remains within scope while “this” can no longer refer to “myObject"
 
@@ -45,7 +46,8 @@ In the inner function, “self” remains within scope while “this” can no l
   
   Object
 7.   var f = function g(){ return 23; };
-  typeof g();
+
+typeof g();
   
   Error
   
@@ -73,4 +75,53 @@ In the inner function, “self” remains within scope while “this” can no l
     return typeof arguments[0]();
   })(foo.bar);
   
-    "undefined"
+    "undefined" 
+    
+  12.   var foo = {
+    bar: function(){ return this.baz; },
+    baz: 1
+  }
+  typeof (f = foo.bar)();
+  
+   "undefined" 
+   
+ 13.  var f = (function f(){ return "1"; }, function g(){ return 2; })();
+  typeof f;
+
+number
+
+14. var x = 1;
+  if (function f(){}) {
+    x += typeof f;
+  }
+  x;
+  
+  "1function" 
+  
+
+15.  var x = [typeof x, typeof y][1];
+  typeof typeof x;
+  
+  string
+  
+ 16.   (function(foo){
+    return typeof foo.bar;
+  })({ foo: { bar: 1 } });
+ 
+undefined
+17.  (function f(){
+    function f(){ return 1; }
+    return f();
+    function f(){ return 2; }
+  })();
+
+2
+
+18. function f(){ return f; }
+  new f() instanceof f;
+  
+  false
+  
+19.   with (function(x, undefined){}) length;
+
+   2
