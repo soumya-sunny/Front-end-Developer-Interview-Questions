@@ -66,7 +66,8 @@ typeof g();
     return typeof f();
   })(function(){ return 1; });
   
-  "number"
+
+"number"
 11. var foo = {
     bar: function() { return this.baz; },
     baz: 1
@@ -125,3 +126,8 @@ undefined
 19.   with (function(x, undefined){}) length;
 
    2
+20. function printMe() { var b = 5; alert (a+b); }
+var a = 3; var b = 2;
+printMe();
+alert(a+b);
+  Ans: 8,5
