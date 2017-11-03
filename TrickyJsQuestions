@@ -69,7 +69,7 @@ typeof g();
 
 "number"
 11. var foo = {
-    bar: function() { return this.baz; },
+n    bar: function() { return this.baz; },
     baz: 1
   };
   (function(){
@@ -78,8 +78,10 @@ typeof g();
   
     "undefined" 
     
-  12.   var foo = {
-    bar: function(){ return this.baz; },
+
+12.   var foo = {
+
+bar: function(){ return this.baz; },
     baz: 1
   }
   typeof (f = foo.bar)();
@@ -131,3 +133,18 @@ var a = 3; var b = 2;
 printMe();
 alert(a+b);
   Ans: 8,5
+
+21. Why does this code return the results that it does?
+function isBig(thing) {
+  if (thing == 0 || thing == 1 || thing == 2) {
+    return false
+  }
+  return true
+}
+isBig(1)    // false
+isBig([2])  // false
+isBig([3])  // true
+
+Ans: bcz of '==' it checks for equality only.
+2=='2'//true
+2==[2] //true
