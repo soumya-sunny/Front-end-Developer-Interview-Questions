@@ -1,0 +1,16 @@
+1. Vertically and horizontally align an item using only css? (ans:- transform: translate(-50%, -50%), there are many ways to answer this ques but interview keeps looking for this answer) 2. Box model and Box sizing 3. Ways of creating objects in JS 4. What is a closure? 5. How does the bootstrap grid work? 6. CSS specificity rules Second round: 1. null == undefined; //true or false? 2. null === undefined; //true or false? 3. Many ques were the same from the 1st round with slight variations in framing the question. Third round: 1. To write a code on paper, question based on arrays 2. Improving the solution to reduce time complexity. 3. To write jQuery code for a given animation 4. What happens once you enter url into browser? Fourth round: 1. What happens once you enter url into browser? 
+
+2.	What is Transclution in Angualr Js ?
+3. Write a polyfill for a promise ?
+4.can we create custom event in javascript if yes thenhow?
+What is the difference between Inline CSS and On Page CSS?
+What is $resource and $sce?
+Sort the elements of the list using mergesort (Prefered Language: Object Oriented Javascript)Asked to write the code in pen and paper.
+How do you place div extreme ends of the outer container using CSS?
+Race condition in javascript
+What is javascript typecasting? 
+what is ng Ingectable?
+diff b/w bom and dom diff b/w .detach and .romve method what is $.holdready() what is chaining what is isNaN JavaScript Data type diff b/w primitive and non primitive data type diff b/w body.onl0ad and document. ready
+
+How to make three div aligned horizontally in one single line in CSS 
+How to insert an element in array at specified position in javascript
