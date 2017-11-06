@@ -148,3 +148,12 @@ isBig([3])  // true
 Ans: bcz of '==' it checks for equality only.
 2=='2'//true
 2==[2] //true
+
+22. What is the color of span?
+<div id="test">
+  <span>Text</span>
+</div>
+div#test span { color: green; }
+div span { color: blue; }
+span { color: red; }
+Ans: green
