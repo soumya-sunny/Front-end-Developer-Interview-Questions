@@ -1,27 +1,103 @@
 
 1. Vertically and horizontally align an item using only css? 
-https://css-tricks.com/centering-css-complete-guide/
+  https://css-tricks.com/centering-css-complete-guide/
 2. Box model and Box sizing 
-box-sizing: content-box|border-box|initial|inherit;
-content-box Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included 
-border-box The width and height properties (and min/max properties) includes content, padding and border, but not the margin 
+  box-sizing: content-box|border-box|initial|inherit;
+  content-box Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included 
+  border-box The width and height properties (and min/max properties) includes content, padding and border, but not the margin 
 
 6. CSS specificity rules
+  Specificity is the means by which browsers decide which CSS property values are the most relevant to an element.
+  The following list of selector types increases by specificity:
+  0.Type selectors (e.g., h1) and pseudo-elements (e.g., ::before).
+  1.Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+  2.ID selectors (e.g., #example).
+  Inline styles added to an element always overwrite any styles in external stylesheets, and thus can be thought of as having the highest specificity.
+  Although technically !important has nothing to do with specificity, it interacts directly with it. Using !important, however, is bad practice .
 
-
-Second round: 1. null == undefined; //true or false? 2. null === undefined; //true or false? 3. Many ques were the same from the 1st round with slight variations in framing the question. Third round: 1. To write a code on paper, question based on arrays 2. Improving the solution to reduce time complexity. 3. To write jQuery code for a given animation 4. What happens once you enter url into browser? Fourth round: 1. What happens once you enter url into browser? 
+1. null == undefined; 
+  true 
+2. null === undefined; 
+   false 
+3. What happens once you enter url into browser? 
+  1. You type maps.google.com into the address bar of your browser.
+  2. The browser checks the cache for a DNS record to find the corresponding IP address of maps.google.com.
+  3. If the requested URL is not in the cache, ISP’s DNS server initiates a DNS query to find the IP address of the server that hosts maps.google.com.
+  4. Browser initiates a TCP connection with the server. (three-way handshake, SYN and ACK packages)
+  5.The browser sends an HTTP request to the web server.
+  6. The server handles the request and sends back a response.
+  7. The server sends out an HTTP response.
+  8. The browser displays the HTML content (for HTML responses which is the most common).
+  https://medium.com/@maneesha.wijesinghe1/what-happens-when-you-type-an-url-in-the-browser-and-press-enter-bb0aa2449c1a
 
 2.	What is Transclution in Angualr Js ?
+
+Transclude is a setting to tell angular to capture everything that is put inside the directive in the markup and use it somewhere(Where actually the ng-transclude is at) in the directive's template.
+  https://stackoverflow.com/questions/24725399/what-is-ng-transclude
+  accelebrate.com/blog/angularjs-transclusion-part-1
 3. Write a polyfill for a promise ?
+
 4.can we create custom event in javascript if yes thenhow?
+  var event = new Event('build');
+  // Listen for the event.
+  elem.addEventListener('build', function (e) { ... }, false);
+
+// Dispatch the event.
+  elem.dispatchEvent(event);
+  var event = new CustomEvent('build', { detail: elem.dataset.time });
+  //cutom data
+  
 What is the difference between Inline CSS and On Page CSS?
+On page - on head
+
 What is $resource and $sce?
+  Strict Contextual Escaping” abbreviated as “sce” is a service of angular, which helps us to safely bind the 
+  values in our angular application. 
+  $sce.trustAsHtml()- This method converts the value to privileged one that is accepted and rendered safely by using “ng-bind-html”.
+  $resource was meant to retrieve data from an endpoint, manipulate it and send it back.
+  Requires the ngResource module to be installed.
 Sort the elements of the list using mergesort (Prefered Language: Object Oriented Javascript)Asked to write the code in pen and paper.
 How do you place div extreme ends of the outer container using CSS?
+  yourbox{
+     position:absolute;
+     right:<x>px;
+     top  :<x>px;
+  }
+  parent- relative
 Race condition in javascript
+  when two threads are accessing the same resource at the same time and modify it the result is unexpected. 
+  All Javascript event handler scripts are handled from one master event queue. 
+  This means that event handlers run one at a time and one runs until completion before the next one that's ready to go starts running. 
+  As such, there are no race conditions in Javascript. 
+  Any individual thread of execution in javascript will run to completion before the next one starts.
+  Exception:When your own code causes another event to occur, the browser will sometimes call that event handler synchronously rather than waiting until the current thread of execution is done.
+  
 What is javascript typecasting? 
 what is ng Ingectable?
-diff b/w bom and dom diff b/w .detach and .romve method what is $.holdready() what is chaining what is isNaN JavaScript Data type diff b/w primitive and non primitive data type diff b/w body.onl0ad and document. ready
+
+diff b/w bom and dom 
+The BOM (Browser Object Model) consists of the objects navigator, history, screen, location and document which are children of window. 
+In the document node is the DOM (Document Object Model), the document object model, which represents the contents of the page. 
+You can manipulate it using javascript.
+
+what is $.holdready() 
+Holds or releases the execution of jQuery's ready event
+
+diff b/w primitive and non primitive data type
 
 How to make three div aligned horizontally in one single line in CSS 
+  .left-col {
+      float: left;
+      width:25%;
+  }
+  .center-col {
+      float: left;
+      width: 50%;
+  }
+  .right-col {
+      float: left;
+      width: 25%;
+  }
+
 How to insert an element in array at specified position in javascript
+  arr.splice(index, 0, item); 
