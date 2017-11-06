@@ -1,4 +1,15 @@
-1. Vertically and horizontally align an item using only css? (ans:- transform: translate(-50%, -50%), there are many ways to answer this ques but interview keeps looking for this answer) 2. Box model and Box sizing 3. Ways of creating objects in JS 4. What is a closure? 5. How does the bootstrap grid work? 6. CSS specificity rules Second round: 1. null == undefined; //true or false? 2. null === undefined; //true or false? 3. Many ques were the same from the 1st round with slight variations in framing the question. Third round: 1. To write a code on paper, question based on arrays 2. Improving the solution to reduce time complexity. 3. To write jQuery code for a given animation 4. What happens once you enter url into browser? Fourth round: 1. What happens once you enter url into browser? 
+
+1. Vertically and horizontally align an item using only css? 
+https://css-tricks.com/centering-css-complete-guide/
+2. Box model and Box sizing 
+box-sizing: content-box|border-box|initial|inherit;
+content-box Default. The width and height properties (and min/max properties) includes only the content. Border, padding, or margin are not included 
+border-box The width and height properties (and min/max properties) includes content, padding and border, but not the margin 
+
+6. CSS specificity rules
+
+
+Second round: 1. null == undefined; //true or false? 2. null === undefined; //true or false? 3. Many ques were the same from the 1st round with slight variations in framing the question. Third round: 1. To write a code on paper, question based on arrays 2. Improving the solution to reduce time complexity. 3. To write jQuery code for a given animation 4. What happens once you enter url into browser? Fourth round: 1. What happens once you enter url into browser? 
 
 2.	What is Transclution in Angualr Js ?
 3. Write a polyfill for a promise ?
