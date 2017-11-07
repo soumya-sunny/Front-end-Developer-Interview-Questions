@@ -100,4 +100,20 @@ How to make three div aligned horizontally in one single line in CSS
   }
 
 How to insert an element in array at specified position in javascript
-  arr.splice(index, 0, item); 
+  arr.splice(index, 0, item);
+
+Why JavaScript is used in browsers? Why not the languages Java, Python or Ruby?
+How would you draw a circle using css?
+
+border-radius : 50%
+Without using the id of the setInterval function, how will you cancel all the intervals in your page?
+Where is info of userAgent property locatd?
+Be the first to answer this question
+.Can you create controller in angularjs? 2.Difference between ng-model and {{}} and ng-bind 3.Difference between facory method and service method of creating a service?? what factory method is more advantageous?? 4.what does link function do in a directive? 5.Explain describe block in unit testing of angular with jasmine 6.Polymorphism in javascript? 7.Number of classes in bootstrap(xs,s,m) 8.Promises in angular and about $q 9.How to communicate between two controllers. 10.How to make a website fit to screen without using any bootstrap 11.Explain box model and who introduced it?
+How to detect if the device is mobile device or not.
+What is inline array notation in AngularJS
+Write a program to divide 2 no without using '/' operator.
+Write code to Handle single click and double click on the same element as browser does not have an event for double click
+how to do toggle in angular
+Difference between first of and first child in CSS
+If there is a list of promises, how can they resolved together?
