@@ -3,3 +3,15 @@ List the functional components in JavaScript?
 Answer: The functional components in JavaScript are as follows:
  First-class functions – Utilized in JavaScript as first class objects, you can pass the functions to other functions as arguments, assigned to variables, returned as values from other functions or stored in data structures.
  Nested functions – The functions explicated within other functions are called Nested functions. They will be automatically called ‘everytime’ the main function is invoked.
+
+Singleton through a function:
+var person = new function() {  
+    this.setName = function(name) {
+        this.name = name;
+    }
+    this.sayHi = function() {
+        return "Hi, my name is " + this.name;
+    }
+}
+person.setName("Rafael");  
+alert(person.sayHi()); // Hi, my name is Rafael  
